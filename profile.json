@@ -1,0 +1,13 @@
+{
+  "profile_name": "chenhz01-sanitized-example",
+  "p0_threshold": 3,
+  "p1_threshold": 1,
+  "business_lines": [
+    {"name": "AI Agent/编排", "weight": 2, "keywords": ["agent", "harness", "orchestration", "swarm", "mcp", "skill", "context", "memory", "llm", "rag"]},
+    {"name": "内容/视频流水线", "weight": 2, "keywords": ["video", "render", "animation", "ffmpeg", "short-drama", "subtitle", "mv", "audio", "music"]},
+    {"name": "数据采集/浏览器", "weight": 1, "keywords": ["scraper", "crawler", "headless", "browser", "playwright", "puppeteer", "captcha"]},
+    {"name": "营销/电商", "weight": 2, "keywords": ["marketing", "seo", "copywriting", "growth", "ecommerce", "landing", "affiliate"]},
+    {"name": "投资分析", "weight": 1, "keywords": ["trading", "backtest", "portfolio", "hedge", "stock", "market"]}
+  ],
+  "risk_keywords": ["bypass", "anti-detect", "captcha", "crack", "leak", "scrape-bypass", "auto-trade"]
+}

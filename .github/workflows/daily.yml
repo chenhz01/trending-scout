@@ -1,0 +1,27 @@
+name: daily-trending-scout
+
+on:
+  schedule:
+    - cron: "0 10 * * *"   # 18:00 UTC+8 = 10:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run trending-scout
+        run: python scout.py --limit 15
+      - name: Commit report
+        run: |
+          git config user.name "trending-scout-bot"
+          git config user.email "hcac4735@agent.qq.com"
+          git add reports/
+          git commit -m "trending-scout daily report $(date -u +%F)" || echo "no changes"
+          git push
