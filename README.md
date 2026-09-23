@@ -1,3 +1,9 @@
+> [!IMPORTANT]
+> **此仓已并入 [`adversarial-research-audit`](https://github.com/chenhz01/adversarial-research-audit)**（对抗验证思想并入旗舰）
+> 本仓转为只读归档，issue 与 star 请移步旗舰仓。
+
+---
+
 # trending-scout — GitHub Trending 对抗性审核引擎
 
 > 求合作脱敏版 · 文档 License: CC BY-NC-ND 4.0 · 代码暂不开源（合作版另议）
